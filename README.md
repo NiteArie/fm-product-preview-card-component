@@ -1,4 +1,8 @@
 # fm-product-preview-card-component (Produce Preview Card Component)
+
+## Live View 
+
+[https://nitearie.github.io/fm-product-preview-card-component/](https://nitearie.github.io/fm-product-preview-card-component/)
 ## Design
 
 ![Design Preview](./design/desktop-preview.jpg)

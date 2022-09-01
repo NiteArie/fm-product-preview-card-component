@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    max-width: 650px;
+    display: flex;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+}
+
+.card__info {
+    padding: 28px;
+    background-color: #fff;
+}
+
+.card__type {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card__title {
+    font-size: 36px;
+    font-family: "Fraunces", serif;
+}
+
+.card__description {
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%);
+}
+
+.card__price {
+    margin-top: 24px;
+    margin-bottom: 28px;
+    font-family: "Fraunces", serif;
+    display: flex;
+    gap: 24px;
+}
+
+.card__price span:first-child {
+    color: hsl(158, 36%, 37%);
+    font-size: 34px;
+}
+
+.card__price span:last-child {
+    text-decoration: line-through; 
+    color: hsl(228, 12%, 48%);
+    align-self: center;
+}
+
+.card__button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: hsl(158, 36%, 37%);
+    padding: 16px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card__button:hover {
+    background-color: hsl(158, 30%, 20%);
+}
+
+.card__button img {
+    width: 16px;
+    height: auto;
+}
+
+.card__button span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .card > img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
